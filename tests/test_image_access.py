@@ -699,7 +699,6 @@ def test_stacked_compression(first_image_in):
 
 
 def test_stacked_compression_no_orphaned_objects(first_image_in):
-    # Regression test for issue #691
     xobj, pdf = first_image_in('pike-flate-jp2.pdf')
 
     initial_count = len(pdf.objects)
